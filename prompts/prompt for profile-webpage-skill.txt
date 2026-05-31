@@ -1,0 +1,11 @@
+name: profile-webpage-skill
+description: create a skill to display a generated resume on webpage.
+
+Goal: This is a skill which is used to generate webpage from the resume. The webpage needs to be viewed on my desktop (localhost)
+
+Tasks:
+1. Accept the resume "file-name" from me. Search for this file in the "output" folder within this project. 
+2. Use the resume content as template and context.
+3. Create a new webpage hosted on localhost. Use a developer theme for webpage. The background can be black.
+4. Ensure the generated webpage has contents aligned to the text sentiments as in the original resume. The webpage resume should be clear, concise and one-page long.
+5. The generated resume content should be verifiable, valid and correct.

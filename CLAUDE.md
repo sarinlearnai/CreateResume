@@ -24,9 +24,13 @@ Python that skill emits at runtime to write the `.docx`.
     `Veeva Configurator.txt`) — job descriptions to tailor against.
 - `skills/resume-builder-skill.md` — the resume-builder skill (read this before doing any
   resume work).
+- `skills/profile-webpage-skill.md` — the profile-webpage skill (read this before turning a
+  generated resume into a webpage).
 - Generated resumes are written to the **`output/` folder** (**untracked in git**) as
   `output/<CandidateName>CV-<file-name>.docx`, where `<CandidateName>` is read from the CV
-  (the folder is created if it does not exist).
+  (the folder is created if it does not exist). Webpages generated from those resumes are
+  written into the same `output/` folder as `output/<resume-stem>.html` and served on
+  localhost.
 
 ## Skills
 
@@ -38,6 +42,14 @@ Python that skill emits at runtime to write the `.docx`.
     job-description file. Read the skill in full before doing any resume work — it holds the
     credential-source guidance, hard rules, tailoring approach, formatting spec, and
     `python-docx` helpers. All personal data is read from the CV at runtime.
+- **`profile-webpage-skill`** (`skills/profile-webpage-skill.md`) — the registered skill for
+  turning an already-generated resume into a one-page, developer-themed webpage served on
+  localhost.
+  - **Invoke it whenever** the user asks to display, publish, or turn a named resume file
+    (from `output/`) into a webpage. Read the skill in full first — it holds the
+    content-source guidance, hard rules, developer-theme design approach, generation steps,
+    and `python-docx` read helpers. Every word on the page is read from the resume `.docx` at
+    runtime; nothing personal is stored in the skill files.
 
 ## Core workflow
 
