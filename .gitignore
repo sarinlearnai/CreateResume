@@ -1,0 +1,14 @@
+# Generated resumes — do not track
+output/
+
+# Source-of-truth inputs (CV + job descriptions) — do not track
+reference/
+
+# Python
+__pycache__/
+*.pyc
+build_resume.py
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store

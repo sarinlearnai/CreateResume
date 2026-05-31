@@ -1,0 +1,12 @@
+name: resume-builder-skill
+description: create a skill for the job-description, using my standard resume from the reference documentation section.
+
+Goal: This is a skill which I will be using for creating new tailored resume. This skill needs to be created in skills/ folder as resume-builder-skill.md file if it does not already exists.
+
+Tasks:
+1. Accept the job-description "file-name" from me. Search for this file in the "reference" folder within this project. 
+2. Use my existing CV (the PDF in the "reference" folder) as template and context.
+3. Create a new tailored resume for the job-description details mentioned in job-description from point 1 above. Leverage my credentials from my resume shared in point 2 above.
+4. Name the output file as "<CandidateName>CV"-"file-name".docx where <CandidateName> is read from the CV and "file-name" is the value inserted by me in point 1 above.
+5. Ensure the generated resume has contents aligned to the text sentiments as in the original CV. The new resume should be clear, concise and one-page long.
+6. The generated resume content should be verifiable, valid and correct.
